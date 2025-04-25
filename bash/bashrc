@@ -1,0 +1,15 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Starship prompt
+eval "$(starship init bash)"
+
+# Aliases
+alias ls='eza --icons -a'
+alias vim='nvim'
+alias svim='sudo nvim'
+alias find='nvim $(fzf --preview="bat --color=always {}")'
