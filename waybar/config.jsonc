@@ -86,7 +86,9 @@
     "interval": 1,
   },
   "memory": {
-    "format": " {used:0.1f}Gi",
+    "format": " {percentage}%,
+    "tooltip": true,
+    "interval": 1,
   },
   "disk": {
      "interval": 30,
